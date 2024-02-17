@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<script src="https://kit.fontawesome.com/817e28a61b.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+<script type="module" src="/assets/js/main.js"></script>
+
+<title>Contato - Isaque Mizael</title>
+</head>
+
+<body>
+    <nav class="topbar" id="mainNav">
+    <div class="content m-default">
+        <a href="javascript:void(0);" class="item drawer" id="main-nav-drawer">
+            <i id="drawerIcon" class="fa fa-bars"></i>
+        </a>
+
+        <div class="leading">
+            
+            <a class="item route " href="/blog.html"
+               >Blog</a>
+            
+            <a class="item route  active " href="/contact.html"
+               >Contato</a>
+            
+            <a class="item route " href="/about.html"
+               >Sobre</a>
+            
+            <a class="item route " href="/projects.html"
+               >Projetos</a>
+            
+        </div>
+
+
+
+        <div class="brand">
+            <a href="/">
+                <svg  class="brand-img">
+                    <use xlink:href="/assets/images/common/brand.svg#svg-brand"></use>
+                </svg>
+            </a>
+        </div>
+
+        
+
+        <div class="trailing dark">
+            <div class="social-section">
+    
+    <a class="rounded-button icon filled" href="mailto:contato@isaquemizael.com.br"
+       target="_blank" >
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+    
+    <a class="rounded-button icon filled" href="https://www.linkedin.com/in/isaquemizael"
+       target="_blank" >
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    
+    <a class="rounded-button icon filled" href="https://www.behance.net/isaquemizael"
+       target="_blank" >
+        <i class="fa-brands fa-behance"></i>
+    </a>
+    
+    <a class="rounded-button icon filled" href="https://www.instagram.com/isaquemizael_"
+       target="_blank" >
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    
+</div>
+        </div>
+    </div>
+</nav>
+    
+<section id="contact" class="m-blog">
+    <h2 class="section-title">Contato</h2>
+
+    <div id="contact-body">
+        <div class="textual">
+            <div class="content">
+                <h2>Vamos juntos criar o seu projeto!</h2>
+                <p>
+                    Preencha o formulário com a sua solicitação para que possamos entrar em contato.
+                    Caso prefira, entre em contato através do e-mail <span class="bold">contato@isaquemizael.com.br</span>.
+                </p>
+            </div>
+        </div>
+
+        <form id="form" target="_blank"
+        action="https://docs.google.com/forms/d/e/1FAIpQLScPuepCZ7wDst0PtHqez-DEiJT9o1NUHBJWDiA1brb0Wx86BA/formResponse">
+            <!-- Personal info-->
+            <fieldset class="step active">
+                <div class="item">
+                    <label for="name-field">Seu nome completo:</label>
+                    <input id="name-field" type="text" name="entry.1688533993">
+                </div>
+
+                <div class="item">
+                    <label for="company-field">Nome da sua empresa:</label>
+                    <input type="text" id="company-field" name="entry.1476134587">
+                </div>
+            </fieldset>
+
+            <!-- Address -->
+            <fieldset class="step">
+                <div class="item">
+                    <label for="address-field">Nome da cidade/UF onde fica sua empresa:</label>
+                    <input type="text" id="address-field" name="entry.409939856">
+                </div>
+
+                <div class="item">
+                    <label for="company-site-field">Qual o site da sua empresa?</label>
+                    <input id="company-site-field" type="text" name="entry.907909012">
+                </div>
+            </fieldset>
+
+            <!-- Contact -->
+            <fieldset class="step">
+                <div class="item">
+                    <label for="email-field">Seu email para contato:</label>
+                    <input id="email-field" type="text" name="entry.1640204730">
+                </div>
+
+                <div class="item">
+                    <label for="phone-field">Seu número para contato:</label>
+                    <input type="text" id="phone-field" name="entry.1368216769">
+                </div>
+            </fieldset>
+
+            <fieldset class="step">
+                <div class="item">
+                    <legend>Por onde prefere ser contatado?</legend>
+                    <div class="check">
+                        <input type="checkbox" id="email" name="entry.1096254150" value="Email"/>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="wpp" name="entry.1096254150" value="WhatsApp"/>
+                        <label for="wpp">WhatsApp</label>
+                    </div>
+                    <!--                    <div class="radio">-->
+                    <!--                        <input type="radio" id="any" name="entry.1096254150" value="Qualquer opção"/>-->
+                    <!--                        <label for="any">Qualquer opção</label>-->
+                    <!--                    </div>-->
+                </div>
+            </fieldset>
+
+            <!--About the company-->
+            <fieldset class="step">
+                <div class="item">
+                    <label for="company-desc-field">Fale um pouco sobre sua empresa e do que você precisa:</label>
+                    <input type="text" id="company-desc-field" class="longtext" name="entry.1384903800">
+                </div>
+            </fieldset>
+
+
+            <fieldset class="step">
+                <div class="item">
+                    <legend>Qual o porte de sua empresa?</legend>
+
+                    <div class="radio">
+                        <input type="radio" id="micro-field" name="entry.1339065850"
+                               value="Micro (2—10 funcionários)"/>
+                        <label for="micro-field">Micro (2—10 funcionários)</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="small-field" name="entry.1339065850"
+                               value="Pequena (10—50 funcionários)"/>
+                        <label for="small-field">Pequena (10—50 funcionários)</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="medium-field" name="entry.1339065850"
+                               value="Média (50—100 funcionários)"/>
+                        <label for="medium-field">Média (50—100 funcionários)</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="large-field" name="entry.1339065850"
+                               value="Grande (Mais de 100 funcionários)"/>
+                        <label for="large-field">Grande (Mais de 100 funcionários)</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="step">
+                <div class="item">
+                    <legend>Como me encontrou?</legend>
+
+                    <div class="radio">
+                        <input type="radio" id="instagram-field" name="entry.938490398" value="Instagram"/>
+                        <label for="instagram-field">Instagram</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" id="google-field" name="entry.938490398" value="Google"/>
+                        <label for="google-field">Google</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="behance-field" name="entry.938490398" value="Behance"/>
+                        <label for="behance-field">Behance</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="ind-field" name="entry.938490398" value="Indicação"/>
+                        <label for="ind-field">Indicação</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div id="btn-section" class="dark">
+                <button id="previous-btn" class="rounded-button icon filled" type="button">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button id="next-btn" class="rounded-button filled active" type="button">Próximo</button>
+                <button id="submit-btn" class="rounded-button filled" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<script>
+    let index = 0;
+    const formActiveClassName = ' active';
+
+    const submitBtn = document.getElementById("submit-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const previousBtn = document.getElementById("previous-btn");
+
+    const steps = document.getElementById("form")
+        .getElementsByClassName("step");
+
+    function next() {
+        moveIndex(1);
+    }
+
+    function previous() {
+        moveIndex(-1);
+    }
+
+    function moveIndex(n) {
+        index += n;
+        index = index < 0 ? 0 : index;
+        index = index > steps.length - 1 ? steps.length - 1 : index;
+
+        setupButtons();
+
+        hide(steps[index - n]);
+        show(steps[index]);
+    }
+
+    function setupButtons() {
+        if (index === 0) {
+            show(nextBtn);
+            hide(previousBtn);
+            hide(submitBtn);
+        } else if (index < steps.length - 1) {
+            show(previousBtn);
+            show(nextBtn);
+            hide(submitBtn);
+        } else {
+            show(previousBtn);
+            hide(nextBtn);
+            show(submitBtn);
+        }
+    }
+
+    function hide(element) {
+        element.className = element.className.replace(formActiveClassName, '');
+    }
+
+    function show(element) {
+        if (!element.className.includes(formActiveClassName)) {
+            element.className = `${element.className}${formActiveClassName}`;
+        }
+    }
+
+    nextBtn.onclick = next;
+    previousBtn.onclick = previous;
+</script>
+
+    <footer class="grey text">
+    <div class="social-section">
+    
+    <a class="rounded-button icon filled" href="mailto:contato@isaquemizael.com.br"
+       target="_blank" >
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+    
+    <a class="rounded-button icon filled" href="https://www.linkedin.com/in/isaquemizael"
+       target="_blank" >
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    
+    <a class="rounded-button icon filled" href="https://www.behance.net/isaquemizael"
+       target="_blank" >
+        <i class="fa-brands fa-behance"></i>
+    </a>
+    
+    <a class="rounded-button icon filled" href="https://www.instagram.com/isaquemizael_"
+       target="_blank" >
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    
+</div>
+
+    
+    <span>contato@isaquemizael.com.br</span>
+    <span>Isaque Mizael &copy;</span>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+/* Generated CSS */
+
+#banner1 .card {
+    background-color: black;
+    color: white;
+}
+
+#banner1 .rounded-button {
+    border-color: white;
+    color: white;
+}
+
+#banner1 .rounded-button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    #banner1 .card {
+        background-image: url("/assets/images/cards/first-card.png");
+    }
+}
+
+
+#banner2 .card {
+    background-color: rgb(191, 191, 191);
+    color: black;
+}
+
+#banner2 .rounded-button {
+    border-color: black;
+    color: black;
+}
+
+#banner2 .rounded-button:hover {
+    background-color: black;
+    color: rgb(191, 191, 191);
+}
+
+
+
+#banner2 .cover {
+    order: 2;
+}
+
+
+@media screen and (max-width: 700px) {
+    #banner2 .card {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Logo_design_sketching.jpg/1599px-Logo_design_sketching.jpg");
+    }
+}
+
