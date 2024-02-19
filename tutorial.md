@@ -7,7 +7,6 @@
 git clone https://github.com/isaquemizael/isaquemizael-source.git
 ```
 
-
 ## Como testar
 
 ```bash
@@ -17,7 +16,7 @@ source testar.sh
 ## Como publicar
 
 ```bash
-source publicar.sh
+source publicar.sh 'msg'
 ```
 
 ## Dependencies
