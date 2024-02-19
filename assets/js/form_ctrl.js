@@ -5,12 +5,29 @@ const submitBtn = document.getElementById("submit-btn");
 const nextBtn = document.getElementById("next-btn");
 const previousBtn = document.getElementById("previous-btn");
 
-const steps = document.getElementById("form")
-    .getElementsByClassName("step");
+const form = document.getElementById("form")
+const steps = form.getElementsByClassName("step");
+
+nextBtn.onclick = next;
+previousBtn.onclick = previous;
+submitBtn.onclick = submit;
+
+const NOT_EMPTY_REGEX = /[\S\s]+[\S]+/;
+
+let rules = {
+    'entry.1640204730': /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+    'entry.1368216769': /^(\+55)?( ?\(?[0-9]{2}\)?)? ?[0-9]{1}( ?[0-9]{4}-[0-9]{4}| ?[0-9]{8}| ?[0-9]{9})$/,
+}
 
 function next() {
-    if(validateGroup(document.getElementById("form"), steps[index])) {
+    if (validateGroup(document.getElementById("form"), steps[index])) {
         moveIndex(1);
+    }
+}
+
+function submit() {
+    if (validateGroup(document.getElementById("form"), steps[index])) {
+        form.submit();
     }
 }
 
@@ -55,34 +72,32 @@ function show(element) {
     }
 }
 
-nextBtn.onclick = next;
-previousBtn.onclick = previous;
-
-const NOT_EMPTY_REGEX = /[\S\s]+[\S]+/;
-
-let rules = {
-    'entry.1688533993': NOT_EMPTY_REGEX
-}
-
 function validateGroup(formElement, formSetElement) {
     let processedInputs = [];
     let formData = new FormData(formElement);
     let pass = true;
 
-    for (let input of formSetElement.getElementsByTagName("input")) {
-        if(processedInputs.indexOf(input.name) > -1) {
+    for (let input of formSetElement.getElementsByClassName("input-field")) {
+        if (processedInputs.indexOf(input.name) > -1) {
             continue;
         }
 
         let value = formData.get(input.name);
         let regex = new RegExp(rules[input.name] == null ? NOT_EMPTY_REGEX : rules[input.name]);
 
-        console.log(value);
-        if(!regex.test(value)) {
-            input.parentElement.className = `${input.parentElement.className} wrong`;
+        let itemElement = input;
+        do {
+            itemElement = itemElement.parentElement;
+        } while (!itemElement.className.includes("item"));
+
+
+        if (!regex.test(value) || value == null) {
+            if(!itemElement.className.includes("wrong")) {
+                itemElement.className = `${itemElement.className} wrong`;
+            }
             pass = false;
         } else {
-            input.parentElement.className = input.parentElement.className.replace(" wrong", '');
+            itemElement.className = itemElement.className.replace(" wrong", '');
         }
 
         processedInputs.push(input.name);
