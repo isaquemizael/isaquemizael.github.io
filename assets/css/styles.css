@@ -974,14 +974,35 @@ article.post .card-e {
 .project-body img {
   width: 100%;
 }
+.project-body article {
+  margin: 0 9rem;
+}
+@media screen and (max-width: 900px) {
+  .project-body article {
+    margin: 0;
+  }
+}
 .project-body p {
-  margin: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 1.5rem 9rem;
+}
+@media screen and (max-width: 900px) {
+  .project-body p {
+    margin: 1rem 1rem;
+    font-size: 1rem;
+  }
 }
 .project-body p:has(img) {
   margin: 0 0 0 0;
 }
 .project-body .project-header {
-  padding: 4.5rem;
+  margin: 4.5rem 18rem;
+}
+@media screen and (max-width: 900px) {
+  .project-body .project-header {
+    margin: 1rem 1rem;
+  }
 }
 .project-body .card-e {
   margin-left: 4.5rem;
@@ -992,15 +1013,12 @@ article.post .card-e {
   margin-top: 4.5rem;
   width: 50%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   #projects-section .card-e,
   .project-body .card-e {
     width: 100%;
     margin-top: 3.375rem;
-  }
-  #projects-section .card-e br,
-  .project-body .card-e br {
-    display: none;
+    margin-left: 0;
   }
 }
 
@@ -1008,12 +1026,12 @@ body {
   margin: 0;
 }
 
-.m-default, .project-body p {
+.m-default {
   margin-left: 4.5rem;
   margin-right: 4.5rem;
 }
 @media screen and (max-width: 1000px) {
-  .m-default, .project-body p {
+  .m-default {
     margin-left: 2.25rem;
     margin-right: 2.25rem;
   }
