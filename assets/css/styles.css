@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;700;800&family=Tilt+Warp&display=swap");
 @import "banners.css";
 .dark .filled,
 .filled.dark {
@@ -54,7 +55,7 @@
 
 .grey .filled,
 .filled.grey {
-  background-color: #666666;
+  background-color: #a6a6a6;
   color: white;
 }
 
@@ -65,7 +66,7 @@
 
 .grey.text,
 .text.grey {
-  color: #666666;
+  color: #a6a6a6;
 }
 
 .gallery {
@@ -77,11 +78,9 @@
 }
 @media (max-width: 700px) {
   .gallery {
-    gap: 0.575rem;
     grid-template-columns: 1fr;
   }
 }
-
 .gallery .item-card {
   width: 100%;
   height: 0;
@@ -89,7 +88,6 @@
   position: relative;
   background-color: gray;
 }
-
 .gallery .item-card .hidden-preview {
   opacity: 0%;
   width: 100%;
@@ -97,7 +95,6 @@
   color: white;
   transition: 0.3s;
 }
-
 .gallery .item-card .hidden-preview .title {
   position: absolute;
   float: left;
@@ -106,35 +103,31 @@
   text-align: center;
   transform: translate(-50%, -50%);
   line-height: 100%;
+  font-family: "Tilt Warp", sans-serif;
   font-size: 4rem;
-  font-weight: bold;
   hyphens: manual;
 }
 @media screen and (max-width: 900px) {
   .gallery .item-card .hidden-preview .title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
-
 .gallery .item-card .hidden-preview .title-holder {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
 }
-
 .gallery .item-card .hidden-preview:hover {
   opacity: 100%;
   background-color: gray;
   position: absolute;
 }
-
 .gallery .item-card .cover {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-
 .gallery .item-card img {
   object-fit: cover;
   object-position: center;
@@ -170,14 +163,9 @@
   object-fit: cover;
   object-position: center;
 }
-@media screen and (max-width: 900px) {
-  .slides .page img {
-    object-position: 70%;
-  }
-}
 @media screen and (max-width: 700px) {
   .slides .page img {
-    object-position: 80%;
+    object-position: left;
   }
 }
 
@@ -186,12 +174,6 @@
   width: 100%;
   height: 100%;
   transition: 0.2s;
-}
-@media screen and (max-width: 700px) {
-  .slides .page .textual {
-    backdrop-filter: brightness(75%) blur(6px);
-    -webkit-backdrop-filter: brightness(75%) blur(6px);
-  }
 }
 
 #main-carousel .page .textual .content {
@@ -223,37 +205,12 @@
   line-height: 100%;
   margin-bottom: 2.3rem;
 }
-@media screen and (max-width: 700px) {
-  #main-carousel .page .textual .title {
-    color: white;
-  }
-}
 
 #main-carousel .page .textual .description {
   font-size: 1.3rem;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 90%;
   margin-bottom: 2.99rem;
-}
-@media screen and (max-width: 700px) {
-  #main-carousel .page .textual .description {
-    color: white;
-    font-weight: 400;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #main-carousel .rounded-button {
-    color: white;
-    border-color: white;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #main-carousel .rounded-button:hover {
-    background-color: white;
-    color: black;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -393,31 +350,29 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-
 .topbar .content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
 .topbar .drawer {
   display: none;
   color: black;
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 2.375rem;
 }
-
 .topbar .brand,
 .topbar .leading,
 .topbar .trailing {
   display: inline-block;
-  height: 2.5rem;
+  height: 2.375rem;
 }
-
-.topbar .brand,
+.topbar .brand {
+  height: 2.375rem;
+}
 .topbar .brand .brand-img {
-  height: 2.5rem;
+  height: 100%;
 }
-
 .topbar .leading .item.route {
   text-decoration: none;
   line-height: 2.5rem;
@@ -425,15 +380,12 @@
   color: black;
   transition: 0.3s;
 }
-
 .topbar .leading .item.route:hover {
   color: rgba(0, 0, 0, 0.5019607843);
 }
-
 .topbar .leading .item.route.active {
   font-weight: 800;
 }
-
 .topbar .trailing .item.social {
   position: relative;
   font-size: 1.5rem;
@@ -444,7 +396,6 @@
   height: 2.5rem;
   padding: 0;
 }
-
 .topbar .trailing .item.social i {
   padding-top: 0;
   padding-bottom: 0;
@@ -453,7 +404,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 @media screen and (max-width: 900px) {
   .topbar .leading,
   .topbar .trailing {
@@ -470,6 +420,12 @@
     margin: auto;
   }
 }
+@media screen and (max-width: 700px) {
+  .topbar .content .brand {
+    height: 1.78125rem;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .topbar.expanded .content {
     display: block;
@@ -480,6 +436,7 @@
   .topbar.expanded .leading,
   .topbar.expanded .trailing {
     display: block;
+    height: auto;
   }
   .topbar.expanded .leading .item.route {
     text-decoration: none;
@@ -487,11 +444,8 @@
     padding-bottom: 1rem;
     padding-top: 1rem;
   }
-  .topbar.expanded .leading,
-  .topbar.expanded .trailing {
-    height: auto;
-  }
 }
+
 footer {
   margin-top: 4.5rem;
   margin-bottom: 2.5rem;
@@ -506,8 +460,7 @@ footer span, footer a {
 #banners {
   margin-bottom: 4.5rem;
 }
-
-.banner {
+#banners .banner {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -515,25 +468,29 @@ footer span, footer a {
   margin-bottom: 2.3rem;
   height: 300pt;
 }
-
 #banners .card,
 #banners .card .content,
 #banners .cover {
   border-radius: 0.75rem;
 }
-
 #banners .cover {
   object-fit: cover;
   object-position: center;
   height: 300pt;
   width: 100%;
 }
-
 #banners .card {
   position: relative;
   padding: 3.75rem;
 }
-
+@media screen and (max-width: 900px) {
+  #banners .card {
+    padding: 2.5rem;
+  }
+  #banners .card br {
+    display: none;
+  }
+}
 #banners .card .title {
   display: block;
   font-weight: 800;
@@ -541,40 +498,33 @@ footer span, footer a {
   line-height: 1.85rem;
   margin-bottom: 2.5rem;
 }
-
 #banners .card .description {
   display: block;
   margin-bottom: 2.5rem;
   line-height: 1.235rem;
   font-size: 1.3rem;
 }
-
-#banners .rounded-button {
-  display: inline-block;
-}
-
 #banners .card .content {
   margin: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-
-@media screen and (max-width: 1000px) {
-  #banners .rounded-button {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 900px) {
-  #banners .card {
-    padding: 2.5rem;
-  }
   #banners .card .content {
     position: relative;
   }
 }
+#banners .card .rounded-button {
+  display: inline-block;
+}
+@media screen and (max-width: 900px) {
+  #banners .card .rounded-button {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 700px) {
-  .banner {
+  #banners .banner {
     grid-template-columns: 1fr 0fr;
     gap: 0;
     height: auto;
@@ -590,7 +540,7 @@ footer span, footer a {
   #banners .content {
     width: 100%;
     height: 100%;
-    padding: 3.75rem;
+    padding: 2.5rem;
     backdrop-filter: brightness(50%) blur(6px);
     -webkit-backdrop-filter: brightness(50%) blur(6px);
     color: white;
@@ -598,12 +548,15 @@ footer span, footer a {
   #banners .rounded-button {
     color: white;
     border-color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   #banners .rounded-button:hover {
     background-color: white;
     color: black;
   }
 }
+
 article.post section {
   font-size: 1.5rem;
 }
@@ -722,14 +675,17 @@ article.post .card-e {
   margin: 2rem 13.5rem;
   counter-reset: about_count;
 }
+.about-section .content .list {
+  margin: 0 6rem;
+}
+@media screen and (max-width: 900px) {
+  .about-section .content .list {
+    margin: 0;
+  }
+}
 @media screen and (max-width: 1200px) {
   .about-section {
     margin: 2rem 9rem;
-  }
-}
-@media screen and (max-width: 900px) {
-  .about-section {
-    margin: 1rem 2.25rem;
   }
 }
 @media screen and (max-width: 900px) {
@@ -771,6 +727,11 @@ article.post .card-e {
 .about-section .header .card-e .title {
   font-size: 3.5rem;
   line-height: 3.5rem;
+}
+@media screen and (max-width: 700px) {
+  .about-section .header .card-e .title {
+    font-size: 2.8rem;
+  }
 }
 
 .about-section .header figure {
@@ -896,6 +857,10 @@ article.post .card-e {
     order: 0;
     margin: 2rem 0;
     position: relative;
+  }
+  #contact .textual h2 {
+    font-weight: 800;
+    margin-bottom: 1rem;
   }
 }
 #contact #form {
