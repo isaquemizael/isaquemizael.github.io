@@ -320,9 +320,20 @@
 }
 .blog-post .textual .title {
   padding: 4.5rem;
-  font-size: 40pt;
+  font-size: 3.5rem;
   font-weight: bold;
   line-height: 100%;
+}
+@media screen and (max-width: 900px) {
+  .blog-post .textual .title {
+    padding: 2.25rem;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .blog-post .textual .title {
+    font-size: 2rem;
+  }
 }
 .blog-post img {
   object-fit: cover;
