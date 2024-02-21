@@ -20,7 +20,7 @@
 
 .light .filled:hover,
 .filled.light:hover {
-  background-color: #DCE0DE;
+  background-color: #c5c5c5;
 }
 
 .outlined {
@@ -252,31 +252,36 @@
 #blog-carousel .carousel-item {
   position: relative;
 }
-
 #blog-carousel .textual-holder {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 #blog-carousel .textual {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-
 #blog-carousel .textual .title {
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 100%;
   margin-bottom: 2.5rem;
 }
-
+@media screen and (max-width: 900px) {
+  #blog-carousel .textual .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  #blog-carousel .textual .title {
+    font-size: 2rem;
+  }
+}
 #blog-carousel .carousel-item {
   height: 300pt;
 }
-
 #blog-carousel .carousel-item img {
   object-fit: cover;
   object-position: center;
@@ -284,7 +289,6 @@
   width: 100%;
   margin-bottom: 1rem;
 }
-
 #blog-carousel .carousel-control-prev,
 #blog-carousel .carousel-control-next {
   width: 5%;
@@ -295,11 +299,9 @@
   height: 300pt;
   margin-bottom: 2.5rem;
 }
-
 .blog-post a {
   text-decoration: none;
 }
-
 .blog-post .textual-holder {
   position: absolute;
   width: 100%;
@@ -308,25 +310,20 @@
   transition: 0.3s;
   border-radius: 1rem;
 }
-
 .blog-post .textual-holder:hover {
   background-color: rgba(0, 0, 0, 0.25);
 }
-
 .blog-post .textual {
   position: relative;
   top: 50%;
-  left: 4.5rem;
-  transform: translate(0%, -50%);
+  transform: translateY(-50%);
 }
-
 .blog-post .textual .title {
+  padding: 4.5rem;
   font-size: 40pt;
   font-weight: bold;
   line-height: 100%;
-  margin-bottom: 2.5rem;
 }
-
 .blog-post img {
   object-fit: cover;
   object-position: center;
