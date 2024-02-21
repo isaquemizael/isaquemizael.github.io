@@ -1,6 +1,8 @@
 import {toggle} from "./navbar.js";
 import {Slides, reproduceAuto} from "./slides.js";
 
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 // Set navbar
 document.getElementById("main-nav-drawer").onclick = toggle;
 

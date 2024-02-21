@@ -1028,6 +1028,10 @@ body {
   margin: 0;
 }
 
+img {
+  pointer-events: none;
+}
+
 .m-default {
   margin-left: 4.5rem;
   margin-right: 4.5rem;
