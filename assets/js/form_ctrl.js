@@ -27,6 +27,7 @@ function next() {
 
 function submit() {
     if (validateGroup(document.getElementById("form"), steps[index])) {
+        gtag('event', 'conversion', {'send_to': 'AW-16476182513/cBC6CN-I_pYZEPGvurA9'});
         form.submit();
     }
 }
