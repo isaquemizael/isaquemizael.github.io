@@ -45,16 +45,13 @@
 
         <div class="leading">
             
-            <a class="item route " href="/blog.html"
-               >Blog</a>
-            
             <a class="item route  active " href="/contact.html"
                >Contato</a>
             
             <a class="item route " href="/about.html"
                >Sobre</a>
             
-            <a class="item route " href="/projects.html"
+            <a class="item route " href="/"
                >Projetos</a>
             
         </div>
@@ -119,32 +116,12 @@
             <fieldset class="step active">
                 <div class="item" id="name-field-set">
                     <label class="show-required-error" for="name-field">Seu nome completo:</label>
-                    <input class="input-field" id="name-field" type="text" name="entry.1688533993" placeholder="John Doe">
+                    <input class="input-field" id="name-field" type="text" name="entry.1688533993" placeholder="Digite seu nome aqui">
                 </div>
 
                 <div class="item">
                     <label class="show-required-error" for="company-field">Nome da sua empresa:</label>
-                    <input class="input-field" type="text" id="company-field" name="entry.1476134587" placeholder="Minha Marca">
-                </div>
-            </fieldset>
-
-            <!-- Address -->
-            <fieldset class="step">
-                <div class="item">
-                    <label class="show-required-error" for="address-field">Nome da cidade/UF onde fica sua empresa:</label>
-                    <input class="input-field" type="text" id="address-field" name="entry.409939856" placeholder="Brasília - DF">
-                </div>
-
-                <div class="item">
-                    <label for="company-site-field">Qual o site da sua empresa?</label>
-                    <div class="description">
-                        Se houver.
-                        Caso prefira, pode informar também o perfil do Instagram.
-                        Isso serve para nos familirizarmos com a sua marca.
-                    </div>
-                    <div class="description error">Liste pelo menos uma rede social ou página da sua empresa.</div>
-                    <textarea class="input-field" id="company-site-field" type="text" name="entry.907909012"
-                              placeholder="www.example.com&#10;instagram.com/user"></textarea>
+                    <input class="input-field" type="text" id="company-field" name="entry.1476134587" placeholder="Sua marca">
                 </div>
             </fieldset>
 
@@ -164,92 +141,12 @@
                 </div>
             </fieldset>
 
-            <fieldset class="step">
-                <div class="item">
-                    <legend>Por onde prefere ser contatado?</legend>
-                    <div class="description error">Oops! Lembre-se de marcar uma das opções de contato.</div>
-                    <div class="check">
-                        <input class="input-field" type="checkbox" id="email" name="entry.1096254150" value="Email"/>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="check">
-                        <input class="input-field" type="checkbox" id="wpp" name="entry.1096254150" value="WhatsApp"/>
-                        <label for="wpp">WhatsApp</label>
-                    </div>
-<!--                    <div class="check">-->
-<!--                        <input class="input-field" type="checkbox" id="other-check" name="entry.1096254150" value="__other_option__"/>-->
-<!--                        <label for="other-check">Outro: </label>-->
-<!--                        <input class="input-field show-required-error" type="text" id="other-text" name="entry.1096254150.other_option_response" placeholder=""/>-->
-<!--                    </div>-->
-                </div>
-            </fieldset>
-
             <!--About the company-->
             <fieldset class="step">
                 <div class="item">
                     <label for="company-desc-field">Fale um pouco sobre sua empresa e do que você precisa:</label>
                     <textarea class="input-field" type="text" id="company-desc-field" class="longtext" name="entry.1384903800"></textarea>
                     <div class="description error">Campo Obrigatório</div>
-                </div>
-            </fieldset>
-
-
-            <fieldset class="step">
-                <div class="item">
-                    <legend>Qual o porte de sua empresa?</legend>
-                    <div class="description error">Informe o tamanho da sua organização...</div>
-
-                    <div class="radio">
-                        <input class="input-field" type="radio" id="micro-field" name="entry.1339065850"
-                               value="Micro (2—10 funcionários)"/>
-                        <label for="micro-field">Micro (2—10 funcionários)</label>
-                    </div>
-                    <div class="radio">
-                        <input class="input-field" type="radio" id="small-field" name="entry.1339065850"
-                               value="Pequena (10—50 funcionários)"/>
-                        <label for="small-field">Pequena (10—50 funcionários)</label>
-                    </div>
-                    <div class="radio">
-                        <input class="input-field" type="radio" id="medium-field" name="entry.1339065850"
-                               value="Média (50—100 funcionários)"/>
-                        <label for="medium-field">Média (50—100 funcionários)</label>
-                    </div>
-                    <div class="radio">
-                        <input class="input-field" type="radio" id="large-field" name="entry.1339065850"
-                               value="Grande (Mais de 100 funcionários)"/>
-                        <label for="large-field">Grande (Mais de 100 funcionários)</label>
-                    </div>
-                </div>
-            </fieldset>
-
-            <fieldset class="step">
-                <div class="item">
-                    <legend>Como me encontrou?</legend>
-                    <div class="description error">É a última pergunta! Selecione uma das opções abaixo.</div>
-
-                    <div class="radio">
-                        <input class="input-field" type="radio" id="instagram-field" name="entry.938490398" value="Instagram"/>
-                        <label for="instagram-field">Instagram</label>
-                    </div>
-                    <div class="radio">
-                        <input class="input-field" type="radio" id="google-field" name="entry.938490398" value="Google"/>
-                        <label for="google-field">Google</label>
-                    </div>
-                    <div class="radio">
-                        <input class="input-field" type="radio" id="behance-field" name="entry.938490398" value="Behance"/>
-                        <label for="behance-field">Behance</label>
-                    </div>
-                    <div class="radio">
-                        <input class="input-field" type="radio" id="ind-field" name="entry.938490398" value="Indicação"/>
-                        <label for="ind-field">Indicação</label>
-                    </div>
-<!--                    <div class="radio">-->
-<!--                        <input class="input-field" type="radio" id="other-found-field"-->
-<!--                               name="entry.938490398" value="__other_option__"/>-->
-<!--                        <label for="ind-field">Outro: </label>-->
-<!--                        <input class="input-field show-required-error" type="text" id="other-found-text-field"-->
-<!--                               name="entry.938490398.other_option_response" value=""/>-->
-<!--                    </div>-->
                 </div>
             </fieldset>
 

@@ -91,7 +91,7 @@ function validateGroup(formElement, formSetElement) {
             itemElement = itemElement.parentElement;
         } while (!itemElement.className.includes("item"));
 
-
+        value = value.trim()
         if (!regex.test(value) || value == null) {
             if(!itemElement.className.includes("wrong")) {
                 itemElement.className = `${itemElement.className} wrong`;
