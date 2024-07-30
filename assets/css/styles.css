@@ -972,11 +972,15 @@ article.post .card-e {
     font-size: 1rem;
   }
 }
+.project-body p .english {
+  font-size: 1rem !important;
+  /*line-height: .2rem;*/
+}
 .project-body p:has(img) {
   margin: 0 0 0 0;
 }
 .project-body .project-header {
-  margin: 4.5rem 9rem;
+  margin: 2.25rem 9rem;
 }
 @media screen and (max-width: 900px) {
   .project-body .project-header {
