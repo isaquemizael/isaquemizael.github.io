@@ -972,7 +972,7 @@ article.post .card-e {
     font-size: 1rem;
   }
 }
-.project-body p .english {
+.project-body p .english, .project-body p .small-p {
   font-size: 1rem !important;
   /*line-height: .2rem;*/
 }
